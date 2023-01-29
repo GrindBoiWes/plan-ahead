@@ -1,2 +1,4 @@
-# plan-ahead
+# Plan Ahead
 Work Day Scheduler 
+
+# Description
