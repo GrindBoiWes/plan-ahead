@@ -18,7 +18,7 @@ $(document).ready(function () {
 
    
         $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+        var blockTime = parseInt($(this).attr("id").split("-")[1]);
 
 
         if (blockTime === currentTime) {
