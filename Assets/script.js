@@ -3,8 +3,9 @@
 var todaysDate = dayjs().format('dddd, MMMM YYYY');
 $('#currentDay').text(todaysDate);
 // Creates click function on save button for entered text and logs it with the hour
-$(document).ready(function () {
- $('.saveBtn').on('click', function() {
+$(document).ready(function() {
+ $('.saveBtn').on('click', function(event) {
+  event.preventDefault();
   var time = $(this).siblings(".description").val();
   var text = $(this).parent().attr("id");
   
@@ -14,11 +15,13 @@ $(document).ready(function () {
  })
 
     function timeOfDay() {
+      
       var currentTime = dayjs().hour();
 
 
        // 
         $(".time-block").each(function () {
+       
         var blockTime = parseInt($(this).attr("id").split("-")[1]);
 
           // This section will check the time of day, and set the class accordingly
