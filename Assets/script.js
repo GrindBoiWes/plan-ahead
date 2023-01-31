@@ -6,8 +6,8 @@ $('#currentDay').text(todaysDate);
 $(document).ready(function() {
  $('.saveBtn').on('click', function(event) {
  event.preventDefault();
-  var time = $(this).siblings(".description").val();
-  var text = $(this).parent().attr("id");
+  var text = $(this).siblings(".description").val();
+  var time = $(this).parent().attr("id");
   
 // Saves Text and Hour of entered data
   localStorage.setItem(time,text);
