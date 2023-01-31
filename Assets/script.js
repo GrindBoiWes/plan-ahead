@@ -5,7 +5,7 @@ $('#currentDay').text(todaysDate);
 // Creates click function on save button for entered text and logs it with the hour
 $(document).ready(function() {
  $('.saveBtn').on('click', function(event) {
-  event.preventDefault();
+ event.preventDefault();
   var time = $(this).siblings(".description").val();
   var text = $(this).parent().attr("id");
   
@@ -15,7 +15,7 @@ $(document).ready(function() {
  })
 
     function timeOfDay() {
-      
+  
       var currentTime = dayjs().hour();
 
 
