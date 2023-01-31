@@ -2,7 +2,7 @@
 // Sets date in header of project
 var todaysDate = dayjs().format('dddd, MMMM YYYY');
 $('#currentDay').text(todaysDate);
-// Creates click function on save button for entered text and logs it with the hour
+// Creates click function on save button for entered text and logs it with the hour. Also prevents text from disappearing upon page refresh.
 $(document).ready(function() {
  $('.saveBtn').on('click', function(event) {
  event.preventDefault();
@@ -15,11 +15,11 @@ $(document).ready(function() {
  })
 
     function timeOfDay() {
-  
+     // Gets the current time of day
       var currentTime = dayjs().hour();
 
 
-       // 
+       // This loops through the time blocks
         $(".time-block").each(function () {
        
         var blockTime = parseInt($(this).attr("id").split("-")[1]);
@@ -51,7 +51,7 @@ $(document).ready(function() {
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
-
+   // Re-runs the function timeOfDay
     timeOfDay();
   });
 
