@@ -6,7 +6,8 @@ With how busy life can be, sometimes you just need to be able to make a list of 
 
 # Screenshot
 
-
+<img src = "./Assets/Images/wds.gif">
+<img src = "./Assets/Images/workday.png">
 
 # Links 
 
